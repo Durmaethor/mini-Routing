@@ -19,6 +19,9 @@ angular.module('miniRouting', [ui.router]);
             templateUrl: 'js/products/productTmpl.html',
             controller: 'productsCtrl'
         })
+
+    $urlRouterProvider
+        .otherwise('/');
     
    
 });
