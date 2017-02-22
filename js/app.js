@@ -1,4 +1,4 @@
-angular.module('miniRouting', [ui.router])
+angular.module('miniRouting', ['ui.router'])
 
 .config(function($urlRouterProvider, $stateProvider){
 
@@ -12,13 +12,14 @@ angular.module('miniRouting', [ui.router])
         .state('settings', {
             url: '/settings',
             templateUrl: 'js/settings/settingsTmpl.html',
+            controller: 'settingsCtrl'
         })
 
         .state('products', {
             url: 'js/products/:id',
             templateUrl: 'js/products/productTmpl.html',
             controller: 'productsCtrl'
-        })
+        });
 
     $urlRouterProvider
         .otherwise('/');
