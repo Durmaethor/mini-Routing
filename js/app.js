@@ -1,6 +1,4 @@
-angular.module('miniRouting', ['ui.router'])
-
-.config(function($urlRouterProvider, $stateProvider){
+angular.module('miniRouting', ['ui.router']).config(function($urlRouterProvider, $stateProvider){
 
     $stateProvider
         .state('home', {
@@ -24,5 +22,4 @@ angular.module('miniRouting', ['ui.router'])
     $urlRouterProvider
         .otherwise('/');
     
-   
 });
