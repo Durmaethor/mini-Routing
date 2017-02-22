@@ -14,7 +14,7 @@ angular.module('miniRouting', ['ui.router']).config(function($urlRouterProvider,
         })
 
         .state('products', {
-            url: 'js/products/:id',
+            url: '/products/:id',
             templateUrl: 'js/products/productTmpl.html',
             controller: 'productsCtrl'
         });
